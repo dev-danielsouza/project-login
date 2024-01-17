@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/tablet.css">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <title>Login</title>
 </head>
@@ -20,13 +21,15 @@
                         </p>
                     </div>
                     <form action="login.php" method="post" autocomplete="on">
-                        <div class="login-screen-form-area">
-                            <label class="login-screen-label" for="user-email"><box-icon name='user' type='solid' color='#FFF' ></box-icon></label>
-                            <input class="login-screen-input" type="email" name="user-email" id="user-email" autocomplete="email" placeholder="Digite seu e-mail" minlength="5">
+                        <div class="separato-container">
+                            <div class="login-screen-form-area">
+                                <label class="login-screen-label" for="user-email"><box-icon name='user' type='solid' color='#FFF' ></box-icon></label>
+                                <input class="login-screen-input" type="email" name="user-email" id="user-email" autocomplete="email" placeholder="Digite seu e-mail" minlength="5">
+                            </div>
+                            <div class="login-screen-form-area">
+                                <label class="login-screen-label" for="user-password"><box-icon name='key' color='#FFF' ></box-icon></label>
+                                <input class="login-screen-input" type="password" name="user-password" id="user-password" autocomplete="current-password" placeholder="Digite sua senha" minlength="5" maxlength="15">
                         </div>
-                        <div class="login-screen-form-area">
-                            <label class="login-screen-label" for="user-password"><box-icon name='key' color='#FFF' ></box-icon></label>
-                            <input class="login-screen-input" type="password" name="user-password" id="user-password" autocomplete="current-password" placeholder="Digite sua senha" minlength="5" maxlength="15">
                         </div>
                         <div class="login-screen-buttons-area">
                             <input class="enter-button" type="submit" value="Entrar">

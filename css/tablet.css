@@ -9,15 +9,16 @@
     --font-roboto: 'Roboto', sans-serif;
 }
 
-/* Desktop version */
+/* Tablet version */
 
-@media screen and (min-width: 1200px) and (orientation: landscape) {
+@media screen and (min-width: 660px) and (max-width: 1200px) {
     body {
-       background-image: linear-gradient(to top, var(--beige), var(--light-blue), var(--dark-blue));
-    }
+        background-image: linear-gradient(to top, var(--beige), var(--light-blue), var(--dark-blue));
+     }
+ 
 
     main {
-        width: 62rem;
+        width: 90%;
         height: 50%;
     }
 
@@ -28,6 +29,7 @@
     .login-screen-image {
         height: 100%;
         background-size: cover;
+        background-position: left center;
         border-top-left-radius: 0;
         border-bottom-right-radius: 10px;
     }
