@@ -4,21 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/desktop.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <title>Login</title>
 </head>
 <body>
     <main>
         <section id="login-screen">
-                <div class="login-screen-image">
-                    
-                </div>
+                <div class="login-screen-image"></div>
                 <div class="login-screen-form">
-                    <h1 class="login-screen-title">Login</h1>
-                    <p class="login-screen-description">
-                        Seja bem-vindo novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
-                    </p>
-                    <form action="login.php" method="post">
-
+                    <div class="written-content">
+                        <h1 class="login-screen-title"> <box-icon name='log-in-circle' type='solid' color='#03318C' ></box-icon>Login</h1>
+                        <p class="login-screen-description">
+                            Seja <strong>bem-vindo(a)</strong> novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
+                        </p>
+                    </div>
+                    <form action="login.php" method="post" autocomplete="on">
+                        <div class="login-screen-form-area">
+                            <label class="login-screen-label" for="user-email"><box-icon name='user' type='solid' color='#FFF' ></box-icon></label>
+                            <input class="login-screen-input" type="email" name="user-email" id="user-email" autocomplete="email" placeholder="Digite seu e-mail" minlength="5">
+                        </div>
+                        <div class="login-screen-form-area">
+                            <label class="login-screen-label" for="user-password"><box-icon name='key' color='#FFF' ></box-icon></label>
+                            <input class="login-screen-input" type="password" name="user-password" id="user-password" autocomplete="current-password" placeholder="Digite sua senha" minlength="5" maxlength="15">
+                        </div>
+                        <div class="login-screen-buttons-area">
+                            <input class="enter-button" type="submit" value="Entrar">
+                            <input class="forgot-password-button" type="button" value="Esqueci a senha &#x2709">
+                        </div>
                     </form>
                 </div>
         </section>

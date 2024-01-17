@@ -10,3 +10,167 @@
     --light-brown: #A66E4E;
     --font-roboto: 'Roboto', sans-serif;
 }
+
+/* Mobile Firt */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-roboto);
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background-color: var(--light-blue);
+    position: relative;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+strong {
+    color: var(--dark-blue);
+}
+
+#login-screen, form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-screen-image {
+    width: 100%;
+    height: 50%;
+    background-image: url(../components/images/login-screen-image.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.login-screen-form {
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    text-align: center;
+    padding: 0.625rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.written-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.login-screen-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--light-dark-blue);
+}
+
+.login-screen-description {
+    font-weight: 500;
+    color: #686767;
+}
+
+.login-screen-form-area {
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    gap: 5px;
+    background-color: var(--light-blue);
+    border: 1px solid var(--light-blue);
+    border-radius: 10px;
+}
+
+.login-screen-label {
+    text-align: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.login-screen-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding-left: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.login-screen-input::placeholder {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #68676794;
+}
+
+.login-screen-input:hover {
+    background-color: rgb(210, 239, 248);
+    transition-duration: 0.3s;
+}
+
+.login-screen-input:focus {
+    background-color: rgb(210, 239, 248);
+    outline: #0367A6;
+}
+
+.login-screen-buttons-area {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.enter-button,  .forgot-password-button {
+    cursor: pointer;
+    height: 2.5rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.enter-button {
+    background-color: var(--dark-blue);
+    color: #FFF;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+}
+
+.enter-button:hover {
+    background-color: var(--light-blue);
+    transition-duration: 0.3s;
+}
+
+.forgot-password-button {
+    background-color: var(--light-brown);
+    color: #FFF;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+}
+
